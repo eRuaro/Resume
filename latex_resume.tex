@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Neil Ruaro
+% Website: https://github.com/eRuaro
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://eruaro.github.io/}{\Large Neil Ruaro}} & Email : \href{mailto:neilruaro@gmail.com}{neilruaro@gmail.com}\\
+  \href{https://eruaro.github.io//}{https://eruaro.github.io/} & Mobile : +63-929-236-6004 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {De La Salle University}{Manila, Philippines}
+      {Senior High School;  GPA: 3.97 / 4.00}{Jun. 2020 - Jun. 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Omdena}{Remote}
+      {Machine Learning Engineer}{May 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Potential Solar Power Plant sites in the Philippines}
+          {Led the develpoment and deployment of a machine learning application that looks for potential solar power plant sites in the Philippines based on satellite data. \href{https://omdenaph-solar.vercel.app/}{https://omdenaph-solar.vercel.app/}}
+      \resumeItemListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Dog Breed Classifier}
+      {Implemented convolutional neural networks and
+utilized mobile-v-net2 architecture and utilized transfer learning, and deep learning with TensorFlow in order to classify dog
+breeds based on image inputs. Carefully picked optimizers and loss variables obtaining an accuracy score of 99 percent. \href{https://github.com/eRuaro/Dog-Breed-Classifier}{https://github.com/eRuaro/Dog-Breed-Classifier}} 
+\vspace{0.5mm}
+
+    \resumeSubItem{Music Player}
+      {Developed a music player application using Flutter, that accesses your device's local storage. Also supports downloading music from the web. \href{https://github.com/eRuaro/music_player}{https://github.com/eRuaro/music_player}}
+      \vspace{0.5mm}
+      
+    \resumeSubItem{Bulldozer price prediction}
+      {Implemented random forest regression
+algorithm using supervised machine learning to predict the sale price of bulldozers and assigned 5 risk parameters resulting in a
+96 percent accuracy. \href{https://github.com/eRuaro/bulldozer-price-regression}{https://github.com/eRuaro/bulldozer-price-regression}}
+\vspace{0.5mm}
+\resumeSubItem{Heart disease classification}
+{Implemented logistic regression
+classification algorithm using supervised machine learning to identify whether one has heart disease or not and assigned 3 risk
+parameters resulting in an 85 percent accuracy. \href{ https://github.com/eRuaro/heartdisease-classification}{ https://github.com/eRuaro/heartdisease-classification}}
+\vspace{0.5mm}
+\resumeSubItem{Rawro chat} 
+{Built a mobile chat application with Flutter integrated with a Firebase backend
+with integration of Cloud firestore wherein users can log-in / register using their email address. Aside from that users can send
+and receive messages and the ability to remove messages. \href{https://github.com/eRuaro/chat_rawro}{https://github.com/eRuaro/chat_rawro}}
+
+  \resumeSubHeadingListEnd
+  
+%
+ %-------OPEN SOURCE CONTRIBUTIONS------
+ \section{Open Source Contributions}
+ \resumeSubHeadingListStart
+ \resumeSubItem{Bloc} {I contribute to open issues on Bloc, one of the most popular state management libaries for Flutter applications. Mainly working on bug fixes.\href{https://github.com/felangel/bloc/}{https://github.com/felangel/bloc/}}
+ \vspace{0.5mm}
+ \resumeSubItem{Harpy} { I contribute to active open issues on Harpy, a mobile application that enhances your Twitter
+experience. Mainly working on UI.\href{https://github.com/robertodoering/harpy}{https://github.com/robertodoering/harpy}}
+\resumeSubHeadingListEnd
+
+%
+%--------ONLINE COURSE CERTIFICATES-----
+\section{Online Course Certificates}
+\resumeSubHeadingListStart
+\resumeSubItem{Accelerated Computer Science Fundamentals 3 course specialization (University of Illinois via Coursera, 2021)} {Learned Object-Oriented programming with C++ and how it is applied to the development of the C++ Standard Template Library.
+Learned how to implement various data structures such and algorithms such as Linked-List, HashMaps, Graphs, and Tree
+Traversals. \href{https://www.coursera.org/specializations/cs-fundamentals}{https://www.coursera.org/specializations/cs-fundamentals}}
+\vspace{0.5mm}
+\resumeSubItem
+{Data Analysis with Python (freeCodeCamp, 2021)} {Learned how to do data analysis with Python with the numpy, pandas, and matplotlib libraries. \href{https://www.freecodecamp.org/learn/data-analysis-with-python/}{https://www.freecodecamp.org/learn/data-analysis-with-python/}}
+\vspace{0.5mm}
+\resumeSubItem
+{CS50x (Harvard via EdX, 2020)} {Learned foundational computer science concepts and the art of programming using C, and
+Python. \href{https://cs50.harvard.edu/college/}{https://cs50.harvard.edu/college/}}
+\resumeSubHeadingListEnd
+
+%
+%--------ARTICLE POSTS---------------------
+\section{Article Posts}
+\resumeSubHeadingListStart
+\resumeSubItem{The Basics of using and testing Cubits for State Management in Flutter (Flutter):} {Wrote and published a tutorial article
+(1000+ views) on how to get started on using the cubit state management approach in Flutter, with TDD.  \href{https://neilruaro.hashnode.dev/using-cubit-for-managing-states-in-flutter}{https://neilruaro.hashnode.dev/using-cubit-for-managing-states-in-flutter}}
+\resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Dart, Python, C++}
+     \hfill
+     \textbf{Technologies}{: Flutter, Tensorflow, Scikit-Learn, FastAPI, Typer, Qt}
+   }
+   \item{\textbf{Developer Tools}{: Git, VS Code, Android Studio, Qt Creator, WSL}}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
